@@ -33,7 +33,7 @@ console.log(WNdb);
 Description
 ------------
 
-This package contains the core DB files of WordNet 3.0 download from download [WordNet files](http://wordnet.princeton.edu/wordnet/download/current-version/).
+This package contains the core DB files of WordNet 3.0 downloaded from [WordNet files](http://wordnet.princeton.edu/wordnet/download/current-version/).
 
 Other "[standoff](http://wordnet.princeton.edu/wordnet/download/standoff/)" files may be added in the future.
 
