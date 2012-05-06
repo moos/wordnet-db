@@ -45,15 +45,16 @@ Installation
 
     npm install WNdb -g (coming)
 
-or, in the meantime, use a git path in your package.json dependencies:
+or, in the meantime, use an __http__ path in your package.json dependencies:
 
 ```
   ...
   "dependencies": {
-    "WNdb": "git://github.com/moos/WNdb.git"
+    "WNdb": "http://github.com/moos/WNdb/tarball/master"
   },
   ...
 ```
+__NOTE__: do not use the git path "git://github.com/moos/WNdb.git" as this will mess up CRLF (if git config core.autocrlf is true) of the WordNet data files.
 
 Properties
 ------------
