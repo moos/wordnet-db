@@ -57,6 +57,11 @@ or, use a git url in your package.json dependencies:
 
 Package is about __10 MB__ in size and uncompresses to about 34 MB.
 
+For older nodes < 0.6, use
+
+    npm install WNdb@3.0.0
+
+
 Properties
 ------------
 
@@ -74,7 +79,7 @@ v3.0.x are pegged to WordNet 3.0 DB.
 
 v3.0.0 -- includes the uncompressed (text) dict files.  On Windows systems, do a `git config core.autocrlf false` before cloning so that CRLF isn't applied to data files.
 
-v3.0.1 -- this includes the actual WordNet tar file, which is unpacked at install time.  There should be no CRLF issues.  Uses build-in 'zlib' package, therefore requires node > 0.6.
+v3.0.1 -- this includes the actual WordNet tar file, which is unpacked at install time.  There should be no CRLF issues.  Uses build-in 'zlib' package, therefore requires node >= 0.6.
 
 
 License
