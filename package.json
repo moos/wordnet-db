@@ -3,17 +3,21 @@
   "name": "WNdb",
   "description": "WordNet 3.0 Database files",
   "keywords": ["WordNet", "wordpos", "natural", "pos"],
-  "version": "3.0.0",
+  "version": "3.0.1",
   "homepage": "http://wordnet.princeton.edu/",
   "repository": {
     "type": "git",
     "url": "git://github.com/moos/WNdb.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "tar": "latest"
+  },
   "devDependencies": {},
   "optionalDependencies": {},
   "engines": {
-    "node": "*"
+    "node": ">=0.6.0"
   },
-  "preferGlobal": true
+  "scripts": {
+    "postinstall": "node unpack.js WNdb-3.0.tar.gz"
+  }
 }
