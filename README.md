@@ -7,13 +7,43 @@ A package to install [WordNet](http://wordnet.princeton.edu) database files for 
 Used by [wordpos](http://github.com/moos/wordpos) project which is based on [natural](http://github.com/NaturalNode/natural) WordNet module.
 
 
+Installation
+------------
+
+    npm install WNdb
+
+or in your package.json dependencies:
+
+```
+  ...
+  "dependencies": {
+    "WNdb": "WNdb"
+  },
+  ...
+```
+
+Package is about __10 MB__ in size and uncompresses to about 34 MB.  The DB file WNdb-3.0.tar.gz is unpacked at install time.
+
+For older nodes < 0.6, use
+
+    npm install WNdb@3.0.0
+
+
+Description
+------------
+
+This package contains the core DB files of WordNet 3.0 downloaded from [WordNet files](http://wordnet.princeton.edu/wordnet/download/current-version/).
+
+Other "[standoff](http://wordnet.princeton.edu/wordnet/download/standoff/)" files may be added in the future.
+
+The purpose of this package is to allow a convenient way to download WordNet files off-line rather than on-demand for node modules that require it.
+
+
 Usage
 -------
-
 ```js
 var WNdb = require('WNdb');
 console.log(WNdb);
-
 // output:
 { version: '3.0',
   path: 'c:\\wordpos\\node_modules\\WNdb\\dict',
@@ -30,38 +60,6 @@ console.log(WNdb);
 }
 ```
 
-Description
-------------
-
-This package contains the core DB files of WordNet 3.0 downloaded from [WordNet files](http://wordnet.princeton.edu/wordnet/download/current-version/).
-
-Other "[standoff](http://wordnet.princeton.edu/wordnet/download/standoff/)" files may be added in the future.
-
-The purpose of this package is to allow a convenient way to download WordNet files offline rather than on-demand for node modules that require it.
-
-
-Installation
-------------
-
-    npm install WNdb
-
-or, use a git url in your package.json dependencies:
-
-```
-  ...
-  "dependencies": {
-    "WNdb": "git://github.com/moos/WNdb.git"
-  },
-  ...
-```
-
-Package is about __10 MB__ in size and uncompresses to about 34 MB.
-
-For older nodes < 0.6, use
-
-    npm install WNdb@3.0.0
-
-
 Properties
 ------------
 
@@ -77,7 +75,7 @@ Changes
 
 v3.0.x are pegged to WordNet 3.0 DB.
 
-v3.0.0 -- includes the uncompressed (text) dict files.  On Windows systems, do a `git config core.autocrlf false` before cloning so that CRLF isn't applied to data files.
+v3.0.0 -- includes the uncompressed (text) dict files.  On Windows systems, do a `git config core.autocrlf false` before _cloning_ so that CRLF isn't applied to data files.
 
 v3.0.1 -- this includes the actual WordNet tar file, which is unpacked at install time.  There should be no CRLF issues.  Uses build-in 'zlib' package, therefore requires node >= 0.6.
 
