@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/moos/WNdb.png)](http://travis-ci.org/moos/WNdb)
 
 WNdb
 =======
