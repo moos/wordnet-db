@@ -1,6 +1,6 @@
 
 WNdb
-=======
+====
 
 A package to install [WordNet](http://wordnet.princeton.edu) database files for Node.js modules.
 
@@ -17,19 +17,18 @@ or in your package.json dependencies:
 ```
   ...
   "dependencies": {
-    "WNdb": "WNdb"
+    "WNdb": "latest"
   },
   ...
 ```
 
-Package is about __10 MB__ in size and uncompresses to about 34 MB.  The DB file WNdb-3.1.tar.gz is unpacked at install time.
-
+Package requires 10 MB of disk space for the dictionaries. During post-installation, an extra 17 MB is required to download and extract the tar file archive.
 
 
 Description
 ------------
 
-This package contains the core DB files of WordNet 3.1 downloaded from [WordNet files](http://wordnet.princeton.edu/wordnet/download/current-version/).
+This package does not contain the core DB files of WordNet 3.1. These files may be downloaded from [WordNet files](http://wordnet.princeton.edu/wordnet/download/current-version/).
 
 Other "[standoff](http://wordnet.princeton.edu/wordnet/download/standoff/)" files may be added in the future.
 
@@ -43,17 +42,18 @@ var WNdb = require('WNdb');
 console.log(WNdb);
 // output:
 { version: '3.1',
-  path: 'c:\\wordpos\\node_modules\\WNdb\\dict',
-  files:
-   [ 'data.adj',
-     'data.adv',
-     'data.noun',
-     'data.verb',
-     'index.adj',
-     'index.adv',
-     'index.noun',
-     'index.sense',
-     'index.verb' ]
+  path: 'path/to/project/node_modules/WNdb/dict',
+  files: [
+    'data.adj',
+    'data.adv',
+    'data.noun',
+    'data.verb',
+    'index.adj',
+    'index.adv',
+    'index.noun',
+    'index.sense',
+    'index.verb'
+  ]
 }
 ```
 
@@ -80,6 +80,8 @@ v3.1.0 -- updated to WordNet 3.1 DB.
 
 v3.1.1 -- fixed WNdb tar folder structure.
 
+v3.1.2 -- removed tar file, and refactored post-installation process to actually download everything.
+
 
 License
 -------
@@ -89,5 +91,3 @@ Copyright (c) 2012, 2014, mooster@42at.com
 (The MIT License)
 
 See LICENSE file for complete Princeton University WordNet(r) License.
-
-

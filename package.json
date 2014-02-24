@@ -1,23 +1,27 @@
 {
-  "author": "Moos <mooster@42at.com>",
   "name": "WNdb",
+  "version": "3.1.2",
   "description": "WordNet 3.1 Database files",
-  "keywords": ["WordNet", "wordpos", "natural", "pos"],
-  "version": "3.1.1",
+  "author": "Moos <mooster@42at.com>",
+  "keywords": [
+    "WordNet",
+    "wordpos",
+    "natural",
+    "pos"
+  ],
   "homepage": "http://wordnet.princeton.edu/",
   "repository": {
     "type": "git",
     "url": "git://github.com/moos/WNdb.git"
   },
   "dependencies": {
-    "tar": "latest"
+    "tar": "latest",
+    "mkdirp": "latest"
   },
-  "devDependencies": {},
-  "optionalDependencies": {},
   "engines": {
     "node": ">=0.6.0"
   },
   "scripts": {
-    "postinstall": "node unpack.js WNdb-3.1.tar.gz"
+    "postinstall": "node install.js"
   }
 }
