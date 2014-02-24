@@ -1,6 +1,6 @@
 /*
  * this script will unpack the WordNet DB file at install-time
- * Usage: node unpack.js WNdb-3.0.tar.gz
+ * Usage: node unpack.js WNdb-3.1.tar.gz
  * Requires build-it 'zlib' (node >= 0.6)
  */
 var log = console.log;
