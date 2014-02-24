@@ -78,6 +78,7 @@ v3.0.1 -- this includes the actual WordNet tar file, which is unpacked at instal
 
 v3.1.0 -- updated to WordNet 3.1 DB.
 
+v3.1.1 -- fixed WNdb tar folder structure.
 
 
 License
