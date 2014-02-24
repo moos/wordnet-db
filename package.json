@@ -3,7 +3,7 @@
   "name": "WNdb",
   "description": "WordNet 3.1 Database files",
   "keywords": ["WordNet", "wordpos", "natural", "pos"],
-  "version": "3.1.0",
+  "version": "3.1.1",
   "homepage": "http://wordnet.princeton.edu/",
   "repository": {
     "type": "git",
