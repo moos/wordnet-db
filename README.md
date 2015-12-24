@@ -2,9 +2,13 @@
 wordnet-db
 ==========
 
+[![NPM version](https://img.shields.io/npm/v/wordnet-db.svg)](https://www.npmjs.com/package/wordnet-db)
+[![Build Status](https://img.shields.io/travis/moos/wordnet-db/master.svg)](https://travis-ci.org/moos/wordnet-db)
+
+
 A package to install [WordNet](http://wordnet.princeton.edu) database files for Node.js modules. Used by [wordpos](http://github.com/moos/wordpos) project which is based on [natural](http://github.com/NaturalNode/natural) WordNet module.
 
-**Note:** This repository was previously name **WNdb**.  It's new name wordnet-db complies with npm naming rules.  Although old links will still work, it is recommended to change references to the new name. 
+**Note:** This repository was previously name **WNdb**.  Its new name complies with npm naming rules.  Although old links will still work, it is recommended to change references to the new name. 
 
 
 Description
@@ -70,7 +74,7 @@ Changes
 
 3.1.2 -- repository renamed to wordnet-db.
 
-3.1.1 -- fixed wordnet-db tar folder structure.
+3.1.1 -- fixed WNdb tar folder structure.
 
 3.1.0 -- updated to WordNet 3.1 DB.
 
