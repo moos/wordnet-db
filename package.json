@@ -1,13 +1,13 @@
 {
   "author": "Moos <mooster@42at.com>",
-  "name": "WNdb",
+  "name": "wordnet-db",
   "description": "WordNet 3.1 Database files",
   "keywords": ["WordNet", "wordpos", "natural", "pos"],
-  "version": "3.1.1",
+  "version": "3.1.2",
   "homepage": "http://wordnet.princeton.edu/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/moos/WNdb.git"
+    "url": "git://github.com/moos/wordnet-db.git"
   },
   "dependencies": {
     "tar": "latest"
