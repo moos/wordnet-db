@@ -19,5 +19,5 @@ log("Extracting %s",tarball);
 fs.createReadStream(tarball)
   .on("error", log)
   .pipe(zlib.Unzip())
-  .pipe(tar.Extract({ path: __dirname }))
+  .pipe(tar.x({ path: __dirname }))
   .on("end", log);
