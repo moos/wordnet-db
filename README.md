@@ -72,7 +72,7 @@ wndb.version (string) -- version string of WordNet database file
 Changes
 ---------
 
-3.1.3 -- Updated with PR #12.
+3.1.4 -- Updated with PR #12.  Fix npm package.
 
 3.1.2 -- repository renamed to wordnet-db.
 

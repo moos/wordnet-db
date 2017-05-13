@@ -1,2 +1,3 @@
-node_modules
-dict
+node_modules/
+dict/
+.idea
