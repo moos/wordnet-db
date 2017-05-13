@@ -72,6 +72,8 @@ wndb.version (string) -- version string of WordNet database file
 Changes
 ---------
 
+3.1.3 -- Updated with PR #12.
+
 3.1.2 -- repository renamed to wordnet-db.
 
 3.1.1 -- fixed WNdb tar folder structure.
@@ -89,7 +91,7 @@ License
 -------
 
 wordnet-db package:
-Copyright (c) 2012, 2014, 2016, mooster@42at.com
+Copyright (c) 2012-2017, mooster@42at.com
 (The MIT License)
 
 See LICENSE file for complete Princeton University WordNet(r) License.
