@@ -72,7 +72,7 @@ wndb.version (string) -- version string of WordNet database file
 Changes
 ---------
 
-3.1.5 -- fix for npm@5 postinstall order issue.
+3.1.6 -- fix for npm@5 postinstall order issue.  Include /dict files and disable postinstall script.
 
 3.1.4 -- Updated with PR #12.  Fix npm package.
 
