@@ -1,6 +1,6 @@
 {
   "name": "wordnet-db",
-  "version": "3.1.7",
+  "version": "3.1.11",
   "description": "WordNet 3.1 Database files",
   "author": "Moos <mooster@42at.com>",
   "keywords": [
@@ -25,6 +25,8 @@
     "node": ">=0.6.0"
   },
   "scripts": {
-    "_postinstall": "node unpack.js WNdb-3.1.tar.gz"
+    "_postinstall": "node unpack.js WNdb-3.1.tar.gz",
+    "test": "node test.js",
+    "prepublish": "npm test"
   }
 }

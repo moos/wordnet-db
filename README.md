@@ -1,4 +1,3 @@
-
 wordnet-db
 ==========
 
@@ -23,16 +22,8 @@ The purpose of this package is to allow a convenient way to download WordNet fil
 Installation
 ------------
 
-    npm install wordnet-db
-
-or in your package.json dependencies:
-
 ```
-  ...
-  "dependencies": {
-    "wordnet-db": "wordnet-db"
-  },
-  ...
+  npm install wordnet-db
 ```
 
 Package is about __10 MB__ in size and uncompresses to about 34 MB.  <del>The DB file wordnet-db-3.1.tar.gz is unpacked at install time.</del>
@@ -71,7 +62,9 @@ wndb.version (string) -- version string of WordNet database file
 
 Changes
 ---------
-3.1.7 -- move `tar` to devDependencies
+3.1.11 -- move `tar` to devDependencies - fix crlf issue.  Add pre-publish test for crlf.
+
+~~3.1.7/8/9/10 -- move `tar` to devDependencies~~
 
 3.1.6 -- fix for npm@5 postinstall order issue.  Include /dict files and disable postinstall script.
 
@@ -85,7 +78,7 @@ Changes
 
 3.0.1 -- this includes the actual WordNet tar file, which is unpacked at install time.  There should be no CRLF issues.  Uses build-in 'zlib' package, therefore requires node >= 0.6.
 
-3.0.0 -- includes the uncompressed (text) dict files.  On Windows systems, do a `git config core.autocrlf false` before _cloning_ so that CRLF isn't applied to data files.
+3.0.0 -- includes the uncompressed (text) dict files.  **On Windows systems, do a `git config core.autocrlf false` before _cloning_ so that CRLF isn't applied to data files.**
 
 3.0.x are pegged to WordNet 3.0 DB.
 
