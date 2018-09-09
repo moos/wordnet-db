@@ -35,7 +35,7 @@ or in your package.json dependencies:
   ...
 ```
 
-Package is about __10 MB__ in size and uncompresses to about 34 MB.  The DB file wordnet-db-3.1.tar.gz is unpacked at install time.
+Package is about __10 MB__ in size and uncompresses to about 34 MB.  <del>The DB file wordnet-db-3.1.tar.gz is unpacked at install time.</del>
 
 
 Usage
@@ -71,6 +71,7 @@ wndb.version (string) -- version string of WordNet database file
 
 Changes
 ---------
+3.1.7 -- move `tar` to devDependencies
 
 3.1.6 -- fix for npm@5 postinstall order issue.  Include /dict files and disable postinstall script.
 
