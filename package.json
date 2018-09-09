@@ -18,7 +18,8 @@
   "dependencies": {
   },
   "devDependencies": {
-    "tar": "^3.1"
+    "tar": "^3.1",
+    "crlf": "1.1.1"
   },
   "optionalDependencies": {},
   "engines": {
