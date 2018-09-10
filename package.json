@@ -15,8 +15,7 @@
     "type": "git",
     "url": "git://github.com/moos/wordnet-db.git"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "tar": "^3.1",
     "crlf": "1.1.1"
