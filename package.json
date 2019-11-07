@@ -17,7 +17,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "tar": "^3.1",
+    "tar": "^4.4",
     "crlf": "1.1.1"
   },
   "optionalDependencies": {},
