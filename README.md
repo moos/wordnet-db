@@ -62,6 +62,7 @@ Properties
 
 Change log
 ---------
+- 3.1.13 -- Remove WN tar.gz from npm package.
 - 3.1.12 -- remove `tar` dependency.
 - 3.1.11 -- move `tar` to devDependencies - fix crlf issue.  Add pre-publish test for crlf.
 - ~~3.1.7/8/9/10 -- move `tar` to devDependencies~~
