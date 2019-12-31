@@ -1,22 +1,23 @@
 var wn = require('./index');
-var crlf = require('crlf');
+const detectNewline = require('detect-newline');
+var fs = require('fs');
 var path = require('path');
 var bad = false;
 
-// verify all dict\ files have LF line-ending
+// verify all dict\ files have \n line-ending
 wn.files.forEach(function(file, index) {
-  crlf.get(path.join(wn.path, file), null, function(err, endingType) {
-    if (err) console.error(err);
-    if (endingType !== 'LF') {
-      console.log(' ✖', file, endingType);
-      bad |= true;
-    } else {
-      console.log('✔', file, endingType)
-    }
+  const fc = fs.readFileSync(path.join(wn.path, file), 'utf-8');
+  const endingType = detectNewline(fc);
 
-    if (index === wn.files.length - 1) {
-      // done:
-      process.exit(bad ? 1 : 0)
-    }
-  });
+  if (endingType !== '\n') {
+    console.log(' ✖', file, JSON.stringify(endingType));
+    bad |= true;
+  } else {
+    console.log('✔', file, JSON.stringify(endingType))
+  }
+
+  if (index === wn.files.length - 1) {
+    // done:
+    process.exit(bad ? 1 : 0)
+  }
 });

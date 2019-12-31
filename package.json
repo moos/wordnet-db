@@ -1,6 +1,6 @@
 {
   "name": "wordnet-db",
-  "version": "3.1.13",
+  "version": "3.1.14",
   "description": "WordNet 3.1 Database files",
   "author": "Moos <mooster@42at.com>",
   "keywords": [
@@ -17,9 +17,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "crlf": "1.1.1"
+    "detect-newline": "^3.1.0"
   },
-  "optionalDependencies": {},
   "engines": {
     "node": ">=0.6.0"
   },

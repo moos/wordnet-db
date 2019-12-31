@@ -35,8 +35,9 @@ Usage
 var wndb = require('wordnet-db');
 console.log(wndb);
 // output:
-{ version: '3.1',
-  path: 'c:\\wordpos\\node_modules\\wordnet-db\\dict',
+{ libVersion: '3.1.13',
+  version: '3.1',
+  path: 'D:\\dev\\wordnet-db\\dict',
   files:
    [ 'data.adj',
      'data.adv',
@@ -55,13 +56,16 @@ Properties
 
 `wndb.path` (string) -- the path to the installed WordNet DB files
 
-`wndb.files` (array) -- list of file names under the path
+`wndb.files` (array&lt;string&gt;) -- list of file names under the path
 
 `wndb.version` (string) -- version string of WordNet database file
+
+`wndb.libVersion` (string) -- version of wordnet-db package
 
 
 Change log
 ---------
+- 3.1.14 -- Added `libVersion`.
 - 3.1.13 -- Remove WN tar.gz from npm package.
 - 3.1.12 -- remove `tar` dependency.
 - 3.1.11 -- move `tar` to devDependencies - fix crlf issue.  Add pre-publish test for crlf.
